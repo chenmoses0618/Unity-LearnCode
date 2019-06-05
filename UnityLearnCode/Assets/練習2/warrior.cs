@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 [System.Serializable]
-public class Warrior : MonoBehaviour
+public class Warrior 
 {
     public int exp;
     public int lv;
@@ -10,13 +10,11 @@ public class Warrior : MonoBehaviour
     {
         get
         {
-            exp = lv * 10;
-            return exp;
-
+            return lv * 10;
         }
         set
         {
-            exp = value;
+            lv= value/10;
         }
     }
 }

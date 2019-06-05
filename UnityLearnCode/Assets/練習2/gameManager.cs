@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-//using Warrior;
 public class gameManager : MonoBehaviour
 {
     public Solider SoldierA = new Solider();
@@ -13,9 +12,10 @@ public class gameManager : MonoBehaviour
         SoldierA.SetExp(100);
         Debug.Log("士兵經驗值-設定:" + SoldierA.exp);
         WarriorA.lv = 50;
-        Debug.Log("戰士經驗值-取得:" + WarriorA.Exp);
-        WarriorA.lv = 777;
-        Debug.Log("戰士經驗值-取得:" + WarriorA.Exp);
+        Debug.Log("士兵經驗值-設定:" + WarriorA.Exp);
+        WarriorA.Exp= 770;
+        Debug.Log("士兵經驗值-設定:" + WarriorA.Exp);
+
     }
  
 }
