@@ -14,10 +14,19 @@ public class praticle_6_5
         public string name;
         public float weight;
         public string kind;
-        public string sex;
         public string color;
-        public int age;
+        private int age;
+        private string sex;
         #endregion
+        //建構函式 與類別同名 無回傳值
+        public Dog(string sex,int age=1)
+        {
+            this.sex = sex;
+            this.age = age;
+        }
+        public Dog()
+        {
+        }
         #region  宣告方法-動物叫聲(無回傳值)
         public void Bark()
         {
