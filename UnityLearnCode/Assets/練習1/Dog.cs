@@ -3,13 +3,12 @@ using UnityEngine;
 
 #endregion
 //6-5 c#練習	
-public class praticle_6_5
+public class Dog
 {
     //序列化 使unity能夠在屬性面板顯示dog類別的公開屬性
     [System.Serializable]
     //宣告狗類別
-    public class Dog
-    {
+
         #region  宣告狗屬性欄位
         public string name;
         public float weight;
@@ -66,5 +65,5 @@ public class praticle_6_5
             Debug.Log(name + ":" + food + ";份量:" + count);
         }
         #endregion
-    }
+    
 }

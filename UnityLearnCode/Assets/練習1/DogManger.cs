@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using static praticle_6_5;
+
 
 public class DogManger:MonoBehaviour
 {
