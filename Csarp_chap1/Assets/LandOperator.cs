@@ -39,14 +39,14 @@ public class LandOperator : MonoBehaviour //必須繼承monobehaviour才能被un
         Debug.Log(E *= 3);//結果33
         Debug.Log(E /= 10);//結果3
         Debug.Log(E % 2);//結果1
-        #endregion 
-        Debug.Log("=====布林值======================");
+        #endregion
         #region 布林運算子
+        Debug.Log("=====布林值======================");
         Debug.Log(BoolA);//布林值 true
         Debug.Log(!BoolA);//反向 false
         #endregion
+        #region  邏輯運算 AND運算子& 兩者真方為為真
         Debug.Log("=====邏輯運算子======================");
-        #region AND運算子& 兩者真方為為真
         Debug.Log("and運算子兩者為true回true");
         Debug.Log("true&true="+ (true & true));   
         Debug.Log("true & false="+ (true & false));
@@ -81,7 +81,7 @@ public class LandOperator : MonoBehaviour //必須繼承monobehaviour才能被un
         Debug.Log("false||true=" + (false || true));
         Debug.Log("false||false=" + (false || false));
         #endregion
-        #region 比較運算子
+        #region 比較運算子 ==   !=  >=  <=  > <
         Debug.Log("=====比較運算子====<<A=70 B=50>>============");
         Debug.Log("== 相等符號");
         Debug.Log("ScoreA == ScoreB 結果為" + (ScoreA == ScoreB));//兩者相等結果true成立 false不成立
