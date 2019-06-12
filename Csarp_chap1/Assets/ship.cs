@@ -12,8 +12,37 @@ public class Ship
                                      //因為預設不能僅有唯寫屬性,所以一般使用上不存在
                                      // public int PassWord {set; }    //僅有唯寫set屬性
     //設定私有屬性
+    //快速移動屬性 Alt+上下鍵
     private float _Width = 6.18f;
+    private float _Height = 2.5f;
+    private float _volume;//可以不需要初始值
     //回傳封裝後私有屬性
+    //封裝意義就是限制外部使用
     public float Width{get { return _Width; }}
+    //黏巴達運算子  [=>] 可以幫你指定運算子
+    //封裝欄位 選屬性名稱 滑鼠右鍵 選[快速動作與重構]
+    public float Height { get => _Height; set => _Height = value; }
+    //屬性運算
+    //利用封裝屬性計算屬性結果,再將結果回傳
+    //如果不使用黏巴達符號,必須要在get屬性前後加上大括號
+    public float volume
+    {
+        get {
+            _volume = Length * Width * Height;
+            return _volume;
+        }
+    }
+
+    private float _weight;
+    public float Weight
+    {
+        get
+        {
+            _weight=volume * 9.5f/1000;
+            return _weight;
+        }
+        set => _weight = value;
+    }
+
 
 }

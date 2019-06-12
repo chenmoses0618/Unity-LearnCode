@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour //必須繼承monobehaviour才能被uni
         //ship.Width = 111.2f; 唯讀屬性 無法寫入值
         Debug.Log("船艦的寬度:" + ship.Width);//讀取物件屬性值並且列印出來
         //Debug.Log("船艦的密碼:" + ship.PassWord); 唯寫屬性無法讀出
-
-
+        Debug.Log("船艦的體積:" + ship.volume);//讀取物件屬性值並且列印出來
+        Debug.Log("船艦的重量:" + ship.Weight+"公噸");//讀取物件屬性值並且列印出來
     }
 }
