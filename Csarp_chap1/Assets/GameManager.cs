@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour //必須繼承monobehaviour才能被uni
     public Ship Bigship = new Ship(90.3f, 10.7f, 7.2f,10.5f);
     void Start()//遊戲起始事件
     {
+        Debug.Log("======讀寫屬性練習=====================");
         ship.Speed = 20.5f;//寫入ship物件屬性值
         Debug.Log("第一艘船艦的速度:" + ship.Speed);//讀取物件屬性值並且列印出來
         ship.Length = 50.7f;
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour //必須繼承monobehaviour才能被uni
         //Debug.Log("船艦的密碼:" + ship.PassWord); 唯寫屬性無法讀出
         Debug.Log("第一艘船艦的體積:" + ship.volume);//讀取物件屬性值並且列印出來
         Debug.Log("第一艘船艦的重量:" + ship.Weight+"公噸");//讀取物件屬性值並且列印出來
-        Debug.Log("===============================" );
+        Debug.Log("======建構子讀寫練習===============" );
         //自動使用建構方式產生初始值,不須先設定資料
         Debug.Log("第二艘船艦的速度:" + Bigship.Speed);//讀取物件屬性值並且列印出來
         Debug.Log("第二艘船艦的長度:" + Bigship.Length);//讀取物件屬性值並且列印出來
