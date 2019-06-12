@@ -11,11 +11,12 @@ public class LandOperator : MonoBehaviour //必須繼承monobehaviour才能被un
     public bool BoolA = true;//布林值 true是 false否
     public bool BoolB = true;//布林值 true是 false否
     public bool BoolC= false;//布林值 true是 false否
+    public int ScoreA = 70, ScoreB = 50;
     void Start()
     {
         #region 運算子練習
         //加減乘除 練習
-        Debug.Log("=====基本運算======================");
+        Debug.Log("=====基本數學運算======================");
         //Debug.Log()
         Debug.Log(a + b);
         Debug.Log(a - b);
@@ -46,24 +47,21 @@ public class LandOperator : MonoBehaviour //必須繼承monobehaviour才能被un
         #endregion
         Debug.Log("=====邏輯運算子======================");
         #region AND運算子& 兩者真方為為真
-        Debug.Log("and運算子");
-        //Debug.Log(BoolA & BoolC);//真 &假
+        Debug.Log("and運算子兩者為true回true");
         Debug.Log("true&true="+ (true & true));   
         Debug.Log("true & false="+ (true & false));
         Debug.Log("false & true="+ (false & true));
         Debug.Log("false & false="+ (false & false));
         #endregion
         #region OR運算子|  其一為真為真
-        Debug.Log("OR運算子");
-        //Debug.Log(BoolA | BoolC);//真 &假
+        Debug.Log("OR運算子,其一為true回true");
         Debug.Log("true|true=" + (true | true));
         Debug.Log("true |false=" + (true | false));
         Debug.Log("false | true=" + (false | true));
         Debug.Log("false | false=" + (false | false));
         #endregion
         #region XOR 互斥運算子^  相同為false
-        Debug.Log("XOR互斥運算子");
-        //Debug.Log(BoolA | BoolC);//真 &假
+        Debug.Log("XOR互斥運算子,兩者相同回flase");
         Debug.Log("true ^ true=" + (true ^ true));
         Debug.Log("true ^ false=" + (true ^ false));
         Debug.Log("false ^ true=" + (false ^ true));
@@ -71,7 +69,6 @@ public class LandOperator : MonoBehaviour //必須繼承monobehaviour才能被un
         #endregion
         #region 條件運算子&& 兩者真方為為真/檢查第一項為false時直接回flase
         Debug.Log("條件運算子 &&,第一個值為false就回false");
-        //Debug.Log(BoolA & BoolC);//真 &假
         Debug.Log("true&&true=" + (true && true));
         Debug.Log("true && false=" + (true && false));
         Debug.Log("false && true=" + (false && true));//第一個布林值為flase救回false
@@ -79,11 +76,25 @@ public class LandOperator : MonoBehaviour //必須繼承monobehaviour才能被un
         #endregion
         #region 條件運算子||  其一為真為真/檢查第一項為true時直接回true
         Debug.Log("條件運算子||,第一個值為true就回true");
-        //Debug.Log(BoolA | BoolC);//真 &假
         Debug.Log("true||true=" + (true || true));//檢查第一項為true時直接回true
         Debug.Log("true||false=" + (true || false));//檢查第一項為true時直接回true
         Debug.Log("false||true=" + (false || true));
         Debug.Log("false||false=" + (false || false));
+        #endregion
+        #region 比較運算子
+        Debug.Log("=====比較運算子====<<A=70 B=50>>============");
+        Debug.Log("== 相等符號");
+        Debug.Log("ScoreA == ScoreB 結果為" + (ScoreA == ScoreB));//兩者相等結果true成立 false不成立
+        Debug.Log("!= 不等符號");
+        Debug.Log("ScoreA != ScoreB 結果為" + (ScoreA != ScoreB));//兩者不等結果true成立 false不成立    
+        Debug.Log("> 大於符號");
+        Debug.Log("ScoreA >ScoreB 結果為" + (ScoreA >ScoreB));//兩者不等結果true成立 false不成立 
+        Debug.Log("< 小於符號");
+        Debug.Log("ScoreA <ScoreB 結果為" + (ScoreA < ScoreB));//兩者不等結果true成立 false不成立   
+        Debug.Log(">= 大於等於符號");
+        Debug.Log("ScoreA >=ScoreB 結果為" + (ScoreA >= ScoreB));//兩者不等結果true成立 false不成立 
+        Debug.Log("<= 小於等於符號");
+        Debug.Log("ScoreA <=ScoreB 結果為" + (ScoreA <= ScoreB));//兩者不等結果true成立 false不成立         
         #endregion
     }
 
